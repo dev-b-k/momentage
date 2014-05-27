@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+workspace 'MomentAge'
+xcodeproj '../MomentAge.xcodeproj'
+pod 'JSONModel', '0.12.0'
+pod "AFNetworking", "~> 2.0"

@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328E001A192CAE7A0040E587 /* APICaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E0019192CAE7A0040E587 /* APICaller.m */; };
+		328E0022192CAF930040E587 /* BaseAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E001D192CAF930040E587 /* BaseAPIRequest.m */; };
+		328E0023192CAF930040E587 /* BaseAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E001F192CAF930040E587 /* BaseAPIResponse.m */; };
+		328E0024192CAF930040E587 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E0021192CAF930040E587 /* BaseModel.m */; };
+		328E0027192CB2420040E587 /* Moment.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E0026192CB2420040E587 /* Moment.m */; };
+		328E002A192CB43C0040E587 /* MomentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E0029192CB43C0040E587 /* MomentItem.m */; };
+		328E002D192CB5080040E587 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E002C192CB5080040E587 /* User.m */; };
+		328E0030192CB6F10040E587 /* ApiResponseMoments.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E002F192CB6F10040E587 /* ApiResponseMoments.m */; };
+		329E5052192CA27E00EF6464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5051192CA27E00EF6464 /* Foundation.framework */; };
+		329E5054192CA27E00EF6464 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5053192CA27E00EF6464 /* CoreGraphics.framework */; };
+		329E5056192CA27E00EF6464 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5055192CA27E00EF6464 /* UIKit.framework */; };
+		329E505C192CA27E00EF6464 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 329E505A192CA27E00EF6464 /* InfoPlist.strings */; };
+		329E505E192CA27E00EF6464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E505D192CA27E00EF6464 /* main.m */; };
+		329E5062192CA27E00EF6464 /* MomentAgeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E5061192CA27E00EF6464 /* MomentAgeAppDelegate.m */; };
+		329E5065192CA27E00EF6464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329E5063192CA27E00EF6464 /* Main.storyboard */; };
+		329E5068192CA27E00EF6464 /* MomentAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E5067192CA27E00EF6464 /* MomentAgeViewController.m */; };
+		329E506A192CA27E00EF6464 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E5069192CA27E00EF6464 /* Images.xcassets */; };
+		329E5071192CA27E00EF6464 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5070192CA27E00EF6464 /* XCTest.framework */; };
+		329E5072192CA27E00EF6464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5051192CA27E00EF6464 /* Foundation.framework */; };
+		329E5073192CA27E00EF6464 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E5055192CA27E00EF6464 /* UIKit.framework */; };
+		329E507B192CA27E00EF6464 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 329E5079192CA27E00EF6464 /* InfoPlist.strings */; };
+		329E507D192CA27E00EF6464 /* MomentAgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E507C192CA27E00EF6464 /* MomentAgeTests.m */; };
+		329E5087192CA57700EF6464 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 329E5086192CA57700EF6464 /* Podfile */; };
+		5AA0B41CFF844A39A843B0D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 882FF1960D584745862CC16D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		329E5074192CA27E00EF6464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 329E5046192CA27E00EF6464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 329E504D192CA27E00EF6464;
+			remoteInfo = MomentAge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		328E0018192CAE7A0040E587 /* APICaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICaller.h; sourceTree = "<group>"; };
+		328E0019192CAE7A0040E587 /* APICaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICaller.m; sourceTree = "<group>"; };
+		328E001C192CAF930040E587 /* BaseAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIRequest.h; sourceTree = "<group>"; };
+		328E001D192CAF930040E587 /* BaseAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIRequest.m; sourceTree = "<group>"; };
+		328E001E192CAF930040E587 /* BaseAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIResponse.h; sourceTree = "<group>"; };
+		328E001F192CAF930040E587 /* BaseAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIResponse.m; sourceTree = "<group>"; };
+		328E0020192CAF930040E587 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		328E0021192CAF930040E587 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		328E0025192CB2420040E587 /* Moment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moment.h; sourceTree = "<group>"; };
+		328E0026192CB2420040E587 /* Moment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moment.m; sourceTree = "<group>"; };
+		328E0028192CB43C0040E587 /* MomentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentItem.h; sourceTree = "<group>"; };
+		328E0029192CB43C0040E587 /* MomentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentItem.m; sourceTree = "<group>"; };
+		328E002B192CB5080040E587 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		328E002C192CB5080040E587 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		328E002E192CB6F10040E587 /* ApiResponseMoments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiResponseMoments.h; sourceTree = "<group>"; };
+		328E002F192CB6F10040E587 /* ApiResponseMoments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiResponseMoments.m; sourceTree = "<group>"; };
+		328E0031192CB9E10040E587 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		329E504E192CA27E00EF6464 /* MomentAge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentAge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		329E5051192CA27E00EF6464 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		329E5053192CA27E00EF6464 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		329E5055192CA27E00EF6464 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		329E5059192CA27E00EF6464 /* MomentAge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MomentAge-Info.plist"; sourceTree = "<group>"; };
+		329E505B192CA27E00EF6464 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		329E505D192CA27E00EF6464 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		329E505F192CA27E00EF6464 /* MomentAge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MomentAge-Prefix.pch"; sourceTree = "<group>"; };
+		329E5060192CA27E00EF6464 /* MomentAgeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentAgeAppDelegate.h; sourceTree = "<group>"; };
+		329E5061192CA27E00EF6464 /* MomentAgeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentAgeAppDelegate.m; sourceTree = "<group>"; };
+		329E5064192CA27E00EF6464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		329E5066192CA27E00EF6464 /* MomentAgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentAgeViewController.h; sourceTree = "<group>"; };
+		329E5067192CA27E00EF6464 /* MomentAgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentAgeViewController.m; sourceTree = "<group>"; };
+		329E5069192CA27E00EF6464 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		329E506F192CA27E00EF6464 /* MomentAgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentAgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		329E5070192CA27E00EF6464 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		329E5078192CA27E00EF6464 /* MomentAgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MomentAgeTests-Info.plist"; sourceTree = "<group>"; };
+		329E507A192CA27E00EF6464 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		329E507C192CA27E00EF6464 /* MomentAgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentAgeTests.m; sourceTree = "<group>"; };
+		329E5086192CA57700EF6464 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		882FF1960D584745862CC16D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B01A2A399445C89134865A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = MomentAge/Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		329E504B192CA27E00EF6464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E5054192CA27E00EF6464 /* CoreGraphics.framework in Frameworks */,
+				329E5056192CA27E00EF6464 /* UIKit.framework in Frameworks */,
+				329E5052192CA27E00EF6464 /* Foundation.framework in Frameworks */,
+				5AA0B41CFF844A39A843B0D9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		329E506C192CA27E00EF6464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E5071192CA27E00EF6464 /* XCTest.framework in Frameworks */,
+				329E5073192CA27E00EF6464 /* UIKit.framework in Frameworks */,
+				329E5072192CA27E00EF6464 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		328E0017192CAE190040E587 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				328E0018192CAE7A0040E587 /* APICaller.h */,
+				328E0019192CAE7A0040E587 /* APICaller.m */,
+				328E0031192CB9E10040E587 /* Constants.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		328E001B192CAF540040E587 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				328E001C192CAF930040E587 /* BaseAPIRequest.h */,
+				328E001D192CAF930040E587 /* BaseAPIRequest.m */,
+				328E001E192CAF930040E587 /* BaseAPIResponse.h */,
+				328E001F192CAF930040E587 /* BaseAPIResponse.m */,
+				328E0020192CAF930040E587 /* BaseModel.h */,
+				328E0021192CAF930040E587 /* BaseModel.m */,
+				328E0025192CB2420040E587 /* Moment.h */,
+				328E0026192CB2420040E587 /* Moment.m */,
+				328E0028192CB43C0040E587 /* MomentItem.h */,
+				328E0029192CB43C0040E587 /* MomentItem.m */,
+				328E002B192CB5080040E587 /* User.h */,
+				328E002C192CB5080040E587 /* User.m */,
+				328E002E192CB6F10040E587 /* ApiResponseMoments.h */,
+				328E002F192CB6F10040E587 /* ApiResponseMoments.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		329E5045192CA27E00EF6464 = {
+			isa = PBXGroup;
+			children = (
+				329E5057192CA27E00EF6464 /* MomentAge */,
+				329E5076192CA27E00EF6464 /* MomentAgeTests */,
+				329E5050192CA27E00EF6464 /* Frameworks */,
+				329E504F192CA27E00EF6464 /* Products */,
+				F4B01A2A399445C89134865A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		329E504F192CA27E00EF6464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				329E504E192CA27E00EF6464 /* MomentAge.app */,
+				329E506F192CA27E00EF6464 /* MomentAgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		329E5050192CA27E00EF6464 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				329E5051192CA27E00EF6464 /* Foundation.framework */,
+				329E5053192CA27E00EF6464 /* CoreGraphics.framework */,
+				329E5055192CA27E00EF6464 /* UIKit.framework */,
+				329E5070192CA27E00EF6464 /* XCTest.framework */,
+				882FF1960D584745862CC16D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		329E5057192CA27E00EF6464 /* MomentAge */ = {
+			isa = PBXGroup;
+			children = (
+				328E001B192CAF540040E587 /* Models */,
+				328E0017192CAE190040E587 /* Utilities */,
+				329E5060192CA27E00EF6464 /* MomentAgeAppDelegate.h */,
+				329E5061192CA27E00EF6464 /* MomentAgeAppDelegate.m */,
+				329E5063192CA27E00EF6464 /* Main.storyboard */,
+				329E5066192CA27E00EF6464 /* MomentAgeViewController.h */,
+				329E5067192CA27E00EF6464 /* MomentAgeViewController.m */,
+				329E5086192CA57700EF6464 /* Podfile */,
+				329E5069192CA27E00EF6464 /* Images.xcassets */,
+				329E5058192CA27E00EF6464 /* Supporting Files */,
+			);
+			path = MomentAge;
+			sourceTree = "<group>";
+		};
+		329E5058192CA27E00EF6464 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				329E5059192CA27E00EF6464 /* MomentAge-Info.plist */,
+				329E505A192CA27E00EF6464 /* InfoPlist.strings */,
+				329E505D192CA27E00EF6464 /* main.m */,
+				329E505F192CA27E00EF6464 /* MomentAge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		329E5076192CA27E00EF6464 /* MomentAgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				329E507C192CA27E00EF6464 /* MomentAgeTests.m */,
+				329E5077192CA27E00EF6464 /* Supporting Files */,
+			);
+			path = MomentAgeTests;
+			sourceTree = "<group>";
+		};
+		329E5077192CA27E00EF6464 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				329E5078192CA27E00EF6464 /* MomentAgeTests-Info.plist */,
+				329E5079192CA27E00EF6464 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		329E504D192CA27E00EF6464 /* MomentAge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 329E5080192CA27E00EF6464 /* Build configuration list for PBXNativeTarget "MomentAge" */;
+			buildPhases = (
+				4579A1CF3414477E9B7384F4 /* Check Pods Manifest.lock */,
+				329E504A192CA27E00EF6464 /* Sources */,
+				329E504B192CA27E00EF6464 /* Frameworks */,
+				329E504C192CA27E00EF6464 /* Resources */,
+				4FD6B95CD2514272AD6C5735 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomentAge;
+			productName = MomentAge;
+			productReference = 329E504E192CA27E00EF6464 /* MomentAge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		329E506E192CA27E00EF6464 /* MomentAgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 329E5083192CA27E00EF6464 /* Build configuration list for PBXNativeTarget "MomentAgeTests" */;
+			buildPhases = (
+				329E506B192CA27E00EF6464 /* Sources */,
+				329E506C192CA27E00EF6464 /* Frameworks */,
+				329E506D192CA27E00EF6464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				329E5075192CA27E00EF6464 /* PBXTargetDependency */,
+			);
+			name = MomentAgeTests;
+			productName = MomentAgeTests;
+			productReference = 329E506F192CA27E00EF6464 /* MomentAgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		329E5046192CA27E00EF6464 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MomentAge;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = LeapFrog;
+				TargetAttributes = {
+					329E506E192CA27E00EF6464 = {
+						TestTargetID = 329E504D192CA27E00EF6464;
+					};
+				};
+			};
+			buildConfigurationList = 329E5049192CA27E00EF6464 /* Build configuration list for PBXProject "MomentAge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 329E5045192CA27E00EF6464;
+			productRefGroup = 329E504F192CA27E00EF6464 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				329E504D192CA27E00EF6464 /* MomentAge */,
+				329E506E192CA27E00EF6464 /* MomentAgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		329E504C192CA27E00EF6464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E506A192CA27E00EF6464 /* Images.xcassets in Resources */,
+				329E505C192CA27E00EF6464 /* InfoPlist.strings in Resources */,
+				329E5087192CA57700EF6464 /* Podfile in Resources */,
+				329E5065192CA27E00EF6464 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		329E506D192CA27E00EF6464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E507B192CA27E00EF6464 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4579A1CF3414477E9B7384F4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FD6B95CD2514272AD6C5735 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/MomentAge/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		329E504A192CA27E00EF6464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328E002D192CB5080040E587 /* User.m in Sources */,
+				329E5062192CA27E00EF6464 /* MomentAgeAppDelegate.m in Sources */,
+				329E5068192CA27E00EF6464 /* MomentAgeViewController.m in Sources */,
+				328E0030192CB6F10040E587 /* ApiResponseMoments.m in Sources */,
+				328E0023192CAF930040E587 /* BaseAPIResponse.m in Sources */,
+				328E002A192CB43C0040E587 /* MomentItem.m in Sources */,
+				328E0027192CB2420040E587 /* Moment.m in Sources */,
+				328E0024192CAF930040E587 /* BaseModel.m in Sources */,
+				329E505E192CA27E00EF6464 /* main.m in Sources */,
+				328E0022192CAF930040E587 /* BaseAPIRequest.m in Sources */,
+				328E001A192CAE7A0040E587 /* APICaller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		329E506B192CA27E00EF6464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E507D192CA27E00EF6464 /* MomentAgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		329E5075192CA27E00EF6464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 329E504D192CA27E00EF6464 /* MomentAge */;
+			targetProxy = 329E5074192CA27E00EF6464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		329E505A192CA27E00EF6464 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				329E505B192CA27E00EF6464 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		329E5063192CA27E00EF6464 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				329E5064192CA27E00EF6464 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		329E5079192CA27E00EF6464 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				329E507A192CA27E00EF6464 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		329E507E192CA27E00EF6464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		329E507F192CA27E00EF6464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		329E5081192CA27E00EF6464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B01A2A399445C89134865A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MomentAge/MomentAge-Prefix.pch";
+				INFOPLIST_FILE = "MomentAge/MomentAge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		329E5082192CA27E00EF6464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B01A2A399445C89134865A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MomentAge/MomentAge-Prefix.pch";
+				INFOPLIST_FILE = "MomentAge/MomentAge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		329E5084192CA27E00EF6464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MomentAge.app/MomentAge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MomentAge/MomentAge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MomentAgeTests/MomentAgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		329E5085192CA27E00EF6464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MomentAge.app/MomentAge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MomentAge/MomentAge-Prefix.pch";
+				INFOPLIST_FILE = "MomentAgeTests/MomentAgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		329E5049192CA27E00EF6464 /* Build configuration list for PBXProject "MomentAge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				329E507E192CA27E00EF6464 /* Debug */,
+				329E507F192CA27E00EF6464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		329E5080192CA27E00EF6464 /* Build configuration list for PBXNativeTarget "MomentAge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				329E5081192CA27E00EF6464 /* Debug */,
+				329E5082192CA27E00EF6464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		329E5083192CA27E00EF6464 /* Build configuration list for PBXNativeTarget "MomentAgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				329E5084192CA27E00EF6464 /* Debug */,
+				329E5085192CA27E00EF6464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 329E5046192CA27E00EF6464 /* Project object */;
+}
