@@ -134,10 +134,10 @@ APICallStatus* _status;
         
         [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"JSON: %@", responseObject);
-            [weakSelf APICallSuccededWithResponse: operation.responseData];
+            [self APICallSuccededWithResponse: responseObject];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Error: %@", error);
-            [weakSelf APICallFailedWithError:error];
+            [self APICallFailedWithError:error];
         }];
     }
     
