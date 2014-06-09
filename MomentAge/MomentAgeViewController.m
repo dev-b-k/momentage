@@ -11,7 +11,9 @@
 
 @end
 
-@implementation MomentAgeViewController
+@implementation MomentAgeViewController{
+    UIRefreshControl *refreshControl;
+}
 
 - (void)viewDidLoad
 {
@@ -19,15 +21,31 @@
 	// Add Observer
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityDidChange:) name:kReachabilityChangedNotification object:nil];
     
-    APICaller *apiCaller = [[APICaller alloc] init];
-    [apiCaller getFromModuleName: MODULE_MOMENTS methodName:METHOD_FEATURED andWithDelegate:self];
-    
-    
+    //    adding refreshControl
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refershControlFired) forControlEvents:UIControlEventValueChanged];
+    refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Loading moments..."];
+    [self.collectionViewMoments addSubview:refreshControl];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self callAPIToGetData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)callAPIToGetData{
+    [refreshControl beginRefreshing];
+    APICaller *apiCaller = [[APICaller alloc] init];
+    [apiCaller getFromModuleName: MODULE_MOMENTS methodName:METHOD_FEATURED andWithDelegate:self];
+}
+
+-(void)refershControlFired
+{
+    [self callAPIToGetData];
 }
 
 - (void)reachabilityDidChange:(NSNotification *)notification {
@@ -37,12 +55,16 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet" message:@"No internet connection. Please, check connectivity!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
+    else{
+        [self callAPIToGetData];
+    }
 }
 
 #pragma mark -APICallCompleted Implementation
 -(void)APICallCompletedWithStatus:(APICallStatus *)status andResponse:(BaseAPIResponse *)response{
     self.CurrMoments = ((ApiResponseMoments*)response);
     [self.collectionViewMoments reloadData];
+    [refreshControl endRefreshing];
 }
 
 -(Class)expectedResponseTypeForModuleName:(NSString *)moduleName andMethodName:(NSString *)methodName{
