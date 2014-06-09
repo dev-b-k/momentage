@@ -1,10 +1,3 @@
-//
-//  ApiCaller.m
-//  Plunder
-//
-//  Created by Dev Khadka on 3/6/14.
-//  Copyright (c) 2014 Leapfrog Technology. All rights reserved.
-//
 
 #import "APICaller.h"
 #import <JSONModel.h>
@@ -14,7 +7,9 @@
 
 
 @interface APICaller ()
+
 @property (nonatomic, strong) id delegate;
+
 @end
 
 @implementation APICaller
@@ -58,9 +53,6 @@ APICallStatus* _status;
     
 }
 
-
-
-
 -(void) callAPIWithModuleName: (NSString *) moduleName
                    methodName: (NSString *) methodName
                    httpMethod: (NSString *) httpMethod
@@ -73,7 +65,7 @@ APICallStatus* _status;
     _status.moduleName = moduleName;
     _status.methodName = methodName;
     NSString* url = [NSString stringWithFormat:@"%@/%@/%@",API_BASE_URL,moduleName,methodName];
-    __block __weak APICaller* weakSelf = self;
+    //__block __weak APICaller* weakSelf = self;
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", nil];
@@ -81,30 +73,24 @@ APICallStatus* _status;
     
     //if data is nil do "GET" request else do "POST" request
     if(data){
-        
-        
-        
-        NSLog(@"Request:\n%@",data.toJSONString);
         NSDictionary *parameters = @{@"jsonData": data.toJSONString};
         [manager POST:url
-                           parameters:parameters
-                constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-                    NSLog(@"construction block");
-                    for (NSURL *fileUrl in fileUrls) {
-                        NSError *error = [[NSError alloc] init];
-                        BOOL attached = [formData appendPartWithFileURL:fileUrl name:[fileUrl lastPathComponent] error:&error];
-                        if(!attached){
-                            NSLog(@"Attached: %@, File: %@, Error: %@",(attached?@"1":@"0"), fileUrl, error);
-                        }
-                        else{
-                            NSLog(@"Attached: %@, File: %@",(attached?@"1":@"0"), fileUrl);
-                        }
-                    }
-                    
-                }
+           parameters:parameters
+constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    for (NSURL *fileUrl in fileUrls) {
+        NSError *error = [[NSError alloc] init];
+        BOOL attached = [formData appendPartWithFileURL:fileUrl name:[fileUrl lastPathComponent] error:&error];
+        
+        if(!attached){
+            NSLog(@"Attached: %@, File: %@, Error: %@",(attached?@"1":@"0"), fileUrl, error);
+        }
+        else{
+            NSLog(@"Attached: %@, File: %@",(attached?@"1":@"0"), fileUrl);
+        }
+    }
+    
+}
               success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                  //NSLog(@"JSON: %@", responseObject);
-                  
                   if([responseObject isKindOfClass:[BaseAPIResponse class]]){
                       BaseAPIResponse *respObj = (BaseAPIResponse*)responseObject;
                       if(respObj.status.errorCode==7){
@@ -125,7 +111,6 @@ APICallStatus* _status;
                   
               }
               failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                  NSLog(@"Error: %@", error);
                   [self APICallFailedWithError:error];
               }];
         
@@ -133,10 +118,8 @@ APICallStatus* _status;
     else{
         
         [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"JSON: %@", responseObject);
             [self APICallSuccededWithResponse: responseObject];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
             [self APICallFailedWithError:error];
         }];
     }
@@ -164,13 +147,13 @@ APICallStatus* _status;
     [_completedDelegate APICallCompletedWithStatus:_status andResponse:nil];
 }
 
-
 @end
 
 
 @implementation APICallStatus
 
 @end
+
 
 @implementation DeserializeToJSONModel
 
@@ -182,7 +165,6 @@ APICallStatus* _status;
 }
 
 -(id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error{
-    NSLog(@"Server Response\n%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
     Class cls = [_completedDelegate expectedResponseTypeForModuleName:_status.moduleName andMethodName:_status.methodName];
     id resp = [[cls alloc] initWithData:data error:error];
     return resp;
