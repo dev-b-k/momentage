@@ -2,7 +2,7 @@
 #import "MomentAgeViewController.h"
 #import "ApiResponseMoments.h"
 #import "UIImageView+AFNetworking.h"
-
+#import "Reachability.h"
 
 @interface MomentAgeViewController ()
 
@@ -16,9 +16,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	// Add Observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityDidChange:) name:kReachabilityChangedNotification object:nil];
+    
     APICaller *apiCaller = [[APICaller alloc] init];
     [apiCaller getFromModuleName: MODULE_MOMENTS methodName:METHOD_FEATURED andWithDelegate:self];
+    
     
 }
 
@@ -27,6 +30,14 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)reachabilityDidChange:(NSNotification *)notification {
+    Reachability *reachability = (Reachability *)[notification object];
+   
+    if (reachability.currentReachabilityStatus == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet" message:@"No internet connection. Please, check connectivity!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
 
 #pragma mark -APICallCompleted Implementation
 -(void)APICallCompletedWithStatus:(APICallStatus *)status andResponse:(BaseAPIResponse *)response{

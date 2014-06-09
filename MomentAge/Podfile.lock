@@ -19,13 +19,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JSONModel (0.12.0)
+  - Reachability (3.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - JSONModel (= 0.12.0)
+  - Reachability
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
   JSONModel: b5b098252374916ba3fcb524a7a7e9a4d4b3263f
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
 
 COCOAPODS: 0.33.1

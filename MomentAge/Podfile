@@ -3,3 +3,4 @@ workspace 'MomentAge'
 xcodeproj '../MomentAge.xcodeproj'
 pod 'JSONModel', '0.12.0'
 pod "AFNetworking", "~> 2.0"
+pod "Reachability"

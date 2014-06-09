@@ -31,6 +31,7 @@
 		329E507D192CA27E00EF6464 /* MomentAgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E507C192CA27E00EF6464 /* MomentAgeTests.m */; };
 		329E5087192CA57700EF6464 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 329E5086192CA57700EF6464 /* Podfile */; };
 		5AA0B41CFF844A39A843B0D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 882FF1960D584745862CC16D /* libPods.a */; };
+		DB8B91D91945A03500B2D55E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8B91D81945A03500B2D55E /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		329E507C192CA27E00EF6464 /* MomentAgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentAgeTests.m; sourceTree = "<group>"; };
 		329E5086192CA57700EF6464 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		882FF1960D584745862CC16D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8B91D81945A03500B2D55E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4B01A2A399445C89134865A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = MomentAge/Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8B91D91945A03500B2D55E /* SystemConfiguration.framework in Frameworks */,
 				329E5054192CA27E00EF6464 /* CoreGraphics.framework in Frameworks */,
 				329E5056192CA27E00EF6464 /* UIKit.framework in Frameworks */,
 				329E5052192CA27E00EF6464 /* Foundation.framework in Frameworks */,
@@ -164,6 +167,7 @@
 		329E5050192CA27E00EF6464 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB8B91D81945A03500B2D55E /* SystemConfiguration.framework */,
 				329E5051192CA27E00EF6464 /* Foundation.framework */,
 				329E5053192CA27E00EF6464 /* CoreGraphics.framework */,
 				329E5055192CA27E00EF6464 /* UIKit.framework */,
